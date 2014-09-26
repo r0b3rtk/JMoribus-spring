@@ -30,7 +30,7 @@ public class SpringRunnerTest {
 
         Story story = StoryParser.parseStory(parseableStory);
 
-        runner.runStories(Arrays.asList(story));
+        runner.playAct(Arrays.asList(story));
 
         ApplicationContext context = runner.getSpringApplicationContext();
         MonitorBean monitor = context.getBean(MonitorBean.class);

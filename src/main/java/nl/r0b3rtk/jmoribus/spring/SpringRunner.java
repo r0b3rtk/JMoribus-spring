@@ -6,6 +6,7 @@ import nl.r0b3rtk.jmoribus.spring.annotation.ContainingSteps;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class SpringRunner extends JMoribus {
@@ -17,7 +18,7 @@ public class SpringRunner extends JMoribus {
         super(config);
         context = new ClassPathXmlApplicationContext(applicationContextLocation);
         Map<String, Object> beansContainingSteps = context.getBeansWithAnnotation(ContainingSteps.class);
-        config.addSteps(beansContainingSteps.values());
+        config.addSteps(new ArrayList<Object>(beansContainingSteps.values()));
     }
 
     public ApplicationContext getSpringApplicationContext()

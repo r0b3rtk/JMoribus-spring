@@ -11,6 +11,13 @@
     <description>JSpring integration for the JMoribus BDD framework</description>
     <url>http://jmoribus.github.io/</url>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2/</url>
+            <snapshots></snapshots>
+        </repository>
+    </repositories>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +26,7 @@
         <dependency>
             <groupId>nl.eernie.jmoribus</groupId>
             <artifactId>jmoribus-core</artifactId>
-            <version>0.3-SNAPSHOT</version>
+            <version>0.2</version>
         </dependency>
 
 		<dependency>
