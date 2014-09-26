@@ -16,11 +16,27 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>nl.eernie.jmoribus</groupId>
+            <artifactId>jmoribus-core</artifactId>
+            <version>0.3-SNAPSHOT</version>
+        </dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.1.0.RELEASE</version>
+			<version>4.0.6.RELEASE</version>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.0.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>4.0.6.RELEASE</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
